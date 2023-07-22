@@ -2,14 +2,14 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
-import { Team } from './components/Team/Team'
+import { OurStory } from './components/OurStory/OurStory'
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <>
-     <Team></Team>
+    <OurStory></OurStory>
       {/* <div>
        
         <a href="https://vitejs.dev" target="_blank">

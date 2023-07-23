@@ -1,20 +1,18 @@
 import './App.css';
-import Header from './components/Header' 
-import HeroSection from './components/HeroSection';
-import MissionSection from './components/MissionSection';
-import StatsSection from './components/StatsSection';
-import ValuesSection from './components/ValuesSection';
+import React from 'react';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import AboutPage from './components/AboutPage';
+import ProgramsPage from './components/ProgramsPage';
+
 const App = () => {
 
   return (
-    <div className="App">
-      <Header></Header>
-      <HeroSection></HeroSection>
-      <ValuesSection></ValuesSection>
-      <StatsSection></StatsSection>
-      <MissionSection></MissionSection>
-    </div>
+    <Router>
+      <Switch>
+        <Route path="/programs" component={ProgramsPage}></Route>
+        <Route path="/about" component={AboutPage}></Route>
+      </Switch>
+    </Router>
   )
 }
-
 export default App

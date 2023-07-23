@@ -1,17 +1,18 @@
 import React from "react";
+import NavBar from "./NavBar";
+import HeroSection from "./HeroSection";
+import MissionSection from "./MissionSection";
+import ValuesSection from "./ValuesSection";
+import StatsSection from "./StatsSection";
 
 const AboutPage = () => {
     return (
         <div className="AboutPage">
-            <img className="Logo"></img>
-            <ul>
-                <li><a>Home</a></li>
-                <li><a>About</a></li>
-                <li><a>Programs & Curriculum</a></li>
-                <li><a>Our Story</a></li>
-                <li><a>Team</a></li>
-            </ul>
-            <a><button>Register</button></a>
+            <NavBar></NavBar>
+            <HeroSection></HeroSection>
+            <MissionSection></MissionSection>
+            <ValuesSection></ValuesSection>
+            <StatsSection></StatsSection>
         </div>
     )
 }

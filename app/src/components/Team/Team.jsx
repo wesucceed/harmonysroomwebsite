@@ -1,4 +1,4 @@
-import React from "react";
+// import React from "react";
 
 import teamPhoto from "../../assets/team-photo.jpg"
 import Harmony from "../../assets/Harmony.jpeg"

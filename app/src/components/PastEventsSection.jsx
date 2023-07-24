@@ -1,5 +1,9 @@
 import React from "react";
-import NavBar from "./NavBar";
+import event1 from "../../src/assets/Event1.png"
+import event2 from "../../src/assets/Event2.png"
+import event3 from "../../src/assets/Event3.png"
+
+
 
 const PastEventsSection = () => {
     return (
@@ -20,7 +24,7 @@ const PastEventsSection = () => {
                         coping with change.
                     </p>
                 </div>
-                <img></img>
+                <img src= {event1}></img>
             </div>
             <div>
                 <div>
@@ -34,7 +38,7 @@ const PastEventsSection = () => {
                         importance of both allyship and self-care for anxiety.
                     </p>
                 </div>
-                <img></img>
+                <img src={event2}></img>
             </div><div>
                 <div>
                     <h4>#CommunityConversation</h4>
@@ -50,7 +54,7 @@ const PastEventsSection = () => {
                         quarantine.
                     </p>
                 </div>
-                <img></img>
+                <img src= {event1}></img>
             </div><div>
                 <div>
                     <h4>Self-Care Sisterhood</h4>
@@ -60,7 +64,7 @@ const PastEventsSection = () => {
                         navigating our "new normal."
                     </p>
                 </div>
-                <img></img>
+                <img src={event3}></img>
             </div><div>
                 <div>
                     <h4>Self-Care Sisterhood</h4>
@@ -70,7 +74,7 @@ const PastEventsSection = () => {
                         shut-down.
                     </p>
                 </div>
-                <img></img>
+                <img src={event1}></img>
             </div>
 
         </div>

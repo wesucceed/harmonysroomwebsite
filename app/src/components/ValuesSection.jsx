@@ -1,12 +1,16 @@
 import React from "react";
 // import home_1 from "../../assets/home-1.jpg"
-import first from "../../assets/first.jpg"
+import first from "../../src/assets/portrait-smiley-teenage-girl.jpg"
+import second from "../../src/assets/second.jpg"
+import third from "../../src/assets/third.jpg"
+import fourth from "../../src/assets/fourth.jpg"
+
 
 const ValuesSection = () => {
     const image1 = first;
-    const image2 = "";
-    const image3 = "";
-    const image4 = "";
+    const image2 = second;
+    const image3 = third;
+    const image4 = fourth;
 
     const title1 = "Empowerment";
     const title2 = "Education";
@@ -48,7 +52,7 @@ const ValuesSection = () => {
 function ValueCard({image, title, summary, description}) {
     return (
       <div className="ValueCard">
-        <img src={image}></img>
+        <img src={image} style={{ width: 550, height: 370 }}></img>
 
         <div className = "ValueCardText">
             <h4 className="ValueCardTitle">{title}</h4>

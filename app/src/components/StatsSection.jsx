@@ -1,10 +1,11 @@
 import React from "react";
+import fourth from "../../src/assets/fourth.jpg"
+
 
 const StatsSection = () => {
     const image1 = "";
     const image2 = "";
     const image3 = "";
-    const image4 = "";
 
     const title1 = "Mental health is impacting our youth";
     const title2 = "73% of teenagers feel sometimes or always alone";
@@ -19,7 +20,7 @@ const StatsSection = () => {
     return (
         <div className = "StatssSection">
             <h3>Stats</h3>
-            
+
             <div>
             <h2>Why?</h2>
             <h2>Because self-care is healthcare</h2>

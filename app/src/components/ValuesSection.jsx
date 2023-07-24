@@ -46,7 +46,7 @@ const ValuesSection = () => {
 function ValueCard({image, title, summary, description}) {
     return (
       <div className="ValueCard">
-        {/* <img>{image}</img> */}
+        <img src={image}></img>
 
         <div className = "ValueCardText">
             <h4 className="ValueCardTitle">{title}</h4>

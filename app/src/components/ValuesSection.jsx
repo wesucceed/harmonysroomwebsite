@@ -1,7 +1,9 @@
 import React from "react";
+// import home_1 from "../../assets/home-1.jpg"
+import first from "../../assets/first.jpg"
 
 const ValuesSection = () => {
-    const image1 = "";
+    const image1 = first;
     const image2 = "";
     const image3 = "";
     const image4 = "";

@@ -1,12 +1,16 @@
 
 import './App.css'
 // import { OurStory } from './components/OurStory/OurStory'
-import { Home } from './components/Home/Home'
+import { Team } from './components/Team/Team'
 
 function App() {
   return (
     <>
-      <Home></Home>
+      {/* <Home></Home> */}
+      <Team></Team>
+
+
+
       {/* <div>
        
         <a href="https://vitejs.dev" target="_blank">

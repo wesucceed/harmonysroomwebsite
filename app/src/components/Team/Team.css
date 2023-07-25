@@ -1,6 +1,25 @@
-.image-container {
-  width: 80%;
-}
+
 .header {
-  color:black;
+  /* margin-left: 25%; */
+  color: black;
+  text-align: left;
+  font-weight: 700;
+  font-size: x-large;
+}
+
+.indiv-image h5{
+  font-weight: 600;
+}
+
+.indiv-image h4 {
+  font-weight: 600;
+  font-size: large;
+  color: blue;
+}
+
+.bottom {
+  padding-top: 50px;
+  padding-bottom: 10px;
+  text-align: left;
+  font-size: small;
 }

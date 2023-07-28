@@ -1,5 +1,4 @@
 import React from "react";
-import NavBar from "./NavBar";
 import event1 from "../../src/assets/Event1.png"
 import event2 from "../../src/assets/Event2.png"
 import event3 from "../../src/assets/Event3.png"

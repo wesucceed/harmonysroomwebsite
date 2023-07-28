@@ -8,9 +8,12 @@ const ProgramsPage = () => {
     return (
         <div className="ProgramsPage">
             <NavBar></NavBar>
-            <ProgramsIntro></ProgramsIntro>
-            <EventsSections></EventsSections>
-            <PastEventsSection></PastEventsSection>
+            <div className="body">
+                <ProgramsIntro></ProgramsIntro>
+                <EventsSections></EventsSections>
+                <PastEventsSection></PastEventsSection>
+            </div>
+            
         </div>
     )
 }

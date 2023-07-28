@@ -8,11 +8,13 @@ import event3 from "../../src/assets/Event3.png"
 const PastEventsSection = () => {
     return (
         <div className="PastEventsSection">
-            <h4>Past Events</h4>
-            <h2>Growth Tracks</h2>
-            <p>Growth tracks are a culmination of both self-paced mental health lessons and 
+            <div className="pasteventsectionbody">
+                <h3>Past Events</h3>
+                <h2>Growth Tracks</h2>
+                <p>Growth tracks are a culmination of both self-paced mental health lessons and 
                 quided workshops with licensed mental health providers and non-profits!</p>
-            <div>
+            </div>
+            <div className="pasteventcard pasteventsectionbody">
                 <div>
                     <h4>#GirlsGuide</h4>
                     <h2>To Resilience: Thriving,Not Surviving</h2>
@@ -26,7 +28,8 @@ const PastEventsSection = () => {
                 </div>
                 <img src= {event1}></img>
             </div>
-            <div>
+            <div className="pasteventcard pasteventsectionbody">
+                <img src={event2}></img>
                 <div>
                     <h4></h4>
                     <h2>Moving from Empathy to Action</h2>
@@ -38,8 +41,8 @@ const PastEventsSection = () => {
                         importance of both allyship and self-care for anxiety.
                     </p>
                 </div>
-                <img src={event2}></img>
-            </div><div>
+            </div>
+            <div className="pasteventcard pasteventsectionbody">
                 <div>
                     <h4>#CommunityConversation</h4>
                     <h2>Compassion & Communication </h2>
@@ -55,7 +58,9 @@ const PastEventsSection = () => {
                     </p>
                 </div>
                 <img src= {event1}></img>
-            </div><div>
+            </div>
+            <div className="pasteventcard pasteventsectionbody">
+                <img src={event3}></img>
                 <div>
                     <h4>Self-Care Sisterhood</h4>
                     <h2>Girls Night</h2>
@@ -64,8 +69,7 @@ const PastEventsSection = () => {
                         navigating our "new normal."
                     </p>
                 </div>
-                <img src={event3}></img>
-            </div><div>
+            </div><div className="pasteventcard pasteventsectionbody">
                 <div>
                     <h4>Self-Care Sisterhood</h4>
                     <h2>Coping During COVID-19 Crisis</h2>

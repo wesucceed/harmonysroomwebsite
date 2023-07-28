@@ -26,7 +26,7 @@ const StatsSection = () => {
             <h2>Because self-care is healthcare</h2>
             </div>
 
-            <div>
+            <div className="StatsCards">
                 <StatsCard image = {image1} title = {title1} description = {description1}></StatsCard>
                 <StatsCard image = {image2} title = {title2} description = {description2}></StatsCard>
                 <StatsCard image = {image3} title = {title3} description = {description3}></StatsCard>
@@ -43,7 +43,6 @@ function StatsCard({image, title, summary, description}) {
 
         <div className = "StatsCardText">
             <h4 className="StatsCardTitle">{title}</h4>
-            <h2 className="StatsCardSummary">{summary}</h2>
             <p className="StatsCardDescription">{description}</p>
         </div>
 

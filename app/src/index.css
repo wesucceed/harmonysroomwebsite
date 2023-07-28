@@ -1,0 +1,275 @@
+
+
+.HeroSection{
+    background-image: url("../../src/assets/placeholder.jpeg");
+    height: 17cm;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    align-items: center;
+    display: flex;
+    padding-left: 10rem;
+    overflow-x: hidden;
+}
+
+
+/* .my-background {
+    background-image: url('path/to/your/image.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 400px; 
+  } */
+
+.Herosection_text_title #text1{
+    color: #FFFFFF;
+    font-family: "Poppins", Sans-serif;
+    font-size: 42px;
+    font-weight: 600;
+    line-height: 60px;
+    margin: 0;
+    text-align: left;
+}
+
+.Herosection_text_title #text2{
+    color: #FFFFFF;
+    font-family: "Roboto", Sans-serif;
+    font-size: 29px;
+    font-weight: 600;
+    font-style: italic;
+    line-height: 60px;
+    margin: 0;
+    text-align: left;
+}
+
+.Herosection_text_buttons #button1{
+    font-family: "Roboto", Sans-serif;
+    fill: #FFFFFF;
+    color: #FFFFFF;
+    background-color: #151CBD;
+    border-radius: 28px 28px 28px 28px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+    padding: 20px 50px 20px 50px;
+    border: 0;
+    margin-right: 20px;
+}
+
+
+.Herosection_text_buttons #button2{
+    font-family: "Roboto", Sans-serif;
+    fill: #151CBD;
+    color: #151CBD;
+    background-color: #FFFFFF;
+    border-radius: 28px 28px 28px 28px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+    padding: 20px 50px 20px 50px;
+    border: 0;
+    margin-right: 20px;
+}
+
+
+.Herosection_text_buttons {
+    display: flex; 
+    margin-bottom: 20px;
+}
+
+  
+button {
+    cursor: pointer;
+}
+
+.Herosection_text_buttons #button2:hover {
+    font-family: "Roboto", Sans-serif;
+    fill: #FFFFFF;
+    color: #FFFFFF;
+    background-color: #151CBD;
+    border-radius: 28px 28px 28px 28px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+    padding: 20px 50px 20px 50px;
+    border: 0;
+    margin-right: 20px;
+}
+
+
+.Herosection_text_buttons #button1:hover {
+    font-family: "Roboto", Sans-serif;
+    fill: #151CBD;
+    color: #151CBD;
+    background-color: #FFFFFF;
+    border-radius: 28px 28px 28px 28px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+    padding: 20px 50px 20px 50px;
+    border: 0;
+    margin-right: 20px;
+}
+
+
+.Herosection_text {
+    display: flex; 
+    flex-direction: column;
+
+}
+
+.Herosection_text_title {
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+.Herosection_text_title #text1 {
+    margin-bottom: -10px;
+}
+
+/* .Herosection_text_title #text2 {
+
+} */
+
+
+.mission{
+    text-align: center;
+    font-family: "Montserrat", "Sans-serif";
+    font-size: 34px;
+    line-height: 1.3em;
+    color: #E43256;
+    font-weight: 400px;
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+
+.mission_statement {
+    width: 70%;
+    text-align: center;
+    font-family: "Montserrat", "Sans-serif";
+    font-size: 19px;
+    line-height: 2.1em;
+    letter-spacing: 0.7px;
+}
+
+
+.MissionSection, .ValuesSection{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.ValueCard {
+    display: flex;
+    flex-direction: row;
+    /* border: 2px solid red; 
+    border-radius: 10px; */
+    width: 80%;
+    padding: 30px;
+
+}
+
+.ValueCardText, .blob-container{
+    width: 50%;
+    height: 100%;
+    margin-right: 20px;
+
+}
+
+/* .ValueCardText {
+} */
+
+
+.value2, .value4 {
+    flex-direction: row-reverse;
+}
+
+
+.ValueCardTitle {
+    color: #1970CC;
+    font-family: "Poppins", "Sans-serif";
+    font-size: 1.2rem;
+    font-weight: 800;
+    line-height: 1em;
+    /* text-align: left; */
+    padding-left: 10px;
+    display: flex;
+    align-items: baseline;
+}
+
+.ValueCardDescription {
+    color: #6C8493;
+    font-family: "Roboto", Sans-serif;
+    font-size: 1rem;
+    /* font-weight: 400; */
+    line-height: 1.75em;
+    text-align: left;
+}
+
+
+.ValueCardSummary {
+    color: #102465;
+    font-family: "Roboto", Sans-serif;
+    font-size: 2rem;
+    font-weight: 600;
+    line-height: 1.2em;
+    text-align: left;
+    margin-top: 0;
+}
+
+
+/* styles.css */
+  
+.blob-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 90%; /* To create a circular shape for the image */
+}
+  
+
+
+.TitleHr {
+    height: 2px;
+    width: 70px;
+    margin-left: 20px;
+    background-color: #1970CC;
+    border-width: 0;
+}
+  
+
+.StatsCards{
+    display: flex;
+    background-color: #f4f2f5;
+    width: 80%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.StatssSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.StatsCard {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.StatsCardDescription{
+    color: #205f86;
+    font-family: "Roboto", Sans-serif;
+    font-size: 1rem;
+    /* font-weight: 400; */
+    line-height: 1.75em;
+    text-align: center;
+}
+
+
+.StatsCardTitle{
+    color: #102465;
+    font-family: "Roboto", Sans-serif;
+    font-size: 1.2rem;
+    font-weight: 600;
+    line-height: 1.2em;
+    text-align: left;
+    margin-top: 0;
+    text-align: center;
+}

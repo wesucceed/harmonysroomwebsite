@@ -39,24 +39,30 @@ const ValuesSection = () => {
 
     return (
         <div className = "ValuesSection">
-            <h3>Our Values</h3>
-            <ValueCard image = {image1} title = {title1} summary = {summary1} description = {description1}></ValueCard>
-            <ValueCard image = {image2} title = {title2} summary = {summary2} description = {description2}></ValueCard>
-            <ValueCard image = {image3} title = {title3} summary = {summary3} description = {description3}></ValueCard>
-            <ValueCard image = {image4} title = {title4} summary = {summary4} description = {description4}></ValueCard>
+            <h2>Our Values</h2>
+            <ValueCard image = {image1} title = {title1} summary = {summary1} description = {description1} value={"value1"}></ValueCard>
+            <ValueCard image = {image2} title = {title2} summary = {summary2} description = {description2} value={"value2"}></ValueCard>
+            <ValueCard image = {image3} title = {title3} summary = {summary3} description = {description3} value = {"value3"}></ValueCard>
+            <ValueCard image = {image4} title = {title4} summary = {summary4} description = {description4} value = {"value4"}></ValueCard>
 
         </div>
     )
 }
 
-function ValueCard({image, title, summary, description}) {
+function ValueCard({image, title, summary, description, value}) {
     return (
-      <div className="ValueCard">
-        <img src={image} style={{ width: 550, height: 370 }}></img>
+      <div className={"ValueCard " + value}>
+        <div className="blob-container">
+          <img src={image}></img>
+        </div>
+        
 
         <div className = "ValueCardText">
-            <h4 className="ValueCardTitle">{title}</h4>
-            <h2 className="ValueCardSummary">{summary}</h2>
+            <div className="ValueCardTitle">
+                <p>{title}</p>
+                <hr className="TitleHr"/>
+            </div>
+            <p className="ValueCardSummary">{summary}</p>
             <p className="ValueCardDescription">{description}</p>
         </div>
 

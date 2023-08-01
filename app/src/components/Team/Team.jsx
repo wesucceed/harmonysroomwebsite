@@ -11,7 +11,7 @@ import Jeph from "../../assets/Jephthah.jpg"
 
 export const Team = () => {  
   return(
-    <div style={{width: '100%', height:'100vh'}}>
+    <div style={{width: '100%', height:'100vh'}} className="total">
       <div className="header">
           Team
       </div>

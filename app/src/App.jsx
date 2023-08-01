@@ -1,5 +1,6 @@
 
 import './App.css'
+import { OurStory } from './components/OurStory/OurStory'
 // import { OurStory } from './components/OurStory/OurStory'
 import { Team } from './components/Team/Team'
 
@@ -7,7 +8,8 @@ function App() {
   return (
     <>
       {/* <Home></Home> */}
-      <Team></Team>
+      {/* <Team></Team> */}
+      <OurStory></OurStory>
 
 
 

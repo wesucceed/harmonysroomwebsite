@@ -1,4 +1,7 @@
 
+  /* color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #ffffff; */
 
 .HeroSection{
     background-image: url("../../src/assets/placeholder.jpeg");
@@ -32,6 +35,13 @@
     line-height: 60px;
     margin: 0;
     text-align: left;
+}
+body {
+  margin: 0;
+  /* display: flex; */
+  place-items: center;
+  /* min-width: 320px; */
+  min-height: 100vh;
 }
 
 .Herosection_text_buttons #button1{

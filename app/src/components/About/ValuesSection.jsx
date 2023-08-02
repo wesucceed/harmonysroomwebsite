@@ -1,9 +1,9 @@
 import React from "react";
 // import home_1 from "../../assets/home-1.jpg"
-import first from "../../src/assets/portrait-smiley-teenage-girl.jpg"
-import second from "../../src/assets/second.jpg"
-import third from "../../src/assets/third.jpg"
-import fourth from "../../src/assets/fourth.jpg"
+import first from "../../../src/assets/portrait-smiley-teenage-girl.jpg"
+import second from "../../../src/assets/second.jpg"
+import third from "../../../src/assets/third.jpg"
+import fourth from "../../../src/assets/fourth.jpg"
 
 
 const ValuesSection = () => {

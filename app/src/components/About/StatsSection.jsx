@@ -1,5 +1,4 @@
 import React from "react";
-import fourth from "../../src/assets/fourth.jpg"
 
 
 const StatsSection = () => {

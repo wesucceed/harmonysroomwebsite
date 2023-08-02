@@ -1,6 +1,6 @@
 import React from "react";
-import NavBar from "./NavBar";
-import intro from "../../src/assets/medium-shot-women-talking-therapy.jpg"
+import NavBar from "../NavBar";
+import intro from "../../../src/assets/medium-shot-women-talking-therapy.jpg"
 
 
 const ProgramsIntro = () => {

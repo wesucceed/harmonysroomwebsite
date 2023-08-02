@@ -1,5 +1,5 @@
 import React from "react";
-import NavBar from "./NavBar";
+import NavBar from "../NavBar";
 import HeroSection from "./HeroSection";
 import MissionSection from "./MissionSection";
 import ValuesSection from "./ValuesSection";

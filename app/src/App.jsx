@@ -1,8 +1,8 @@
 import './App.css';
 import React from 'react';
 import { BrowserRouter, Routes, Route} from 'react-router-dom';
-import AboutPage from './components/AboutPage';
-import ProgramsPage from './components/ProgramsPage';
+import AboutPage from './components/About/AboutPage';
+import ProgramsPage from './components/Programs/ProgramsPage';
 import HomePage from './components/HomePage';
 
 const App = () => {

@@ -1,5 +1,5 @@
 import React from "react";
-import NavBar from "./NavBar";
+import NavBar from "../NavBar";
 import ProgramsIntro from "./ProgramsIntro";
 import EventsSections from "./EventsSection";
 import PastEventsSection from "./PastEventsSection";

@@ -4,6 +4,7 @@ import first from "../../../src/assets/portrait-smiley-teenage-girl.jpg"
 import second from "../../../src/assets/second.jpg"
 import third from "../../../src/assets/third.jpg"
 import fourth from "../../../src/assets/fourth.jpg"
+import ValueCard from "./ValueCard";
 
 
 const ValuesSection = () => {
@@ -48,27 +49,6 @@ const ValuesSection = () => {
         </div>
     )
 }
-
-function ValueCard({image, title, summary, description, value}) {
-    return (
-      <div className={"ValueCard " + value}>
-        <div className="blob-container">
-          <img src={image}></img>
-        </div>
-        
-
-        <div className = "ValueCardText">
-            <div className="ValueCardTitle">
-                <p>{title}</p>
-                <hr className="TitleHr"/>
-            </div>
-            <p className="ValueCardSummary">{summary}</p>
-            <p className="ValueCardDescription">{description}</p>
-        </div>
-
-      </div>
-    );
-  }
 
 
 export default ValuesSection;

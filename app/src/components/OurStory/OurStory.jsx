@@ -4,10 +4,12 @@ import ourstory from "../../assets/ourstory.png"
 import icon1 from "../../assets/icon-mh.png"
 import icon2 from "../../assets/icon-dc.png"
 import icon3 from "../../assets/icon-free.png"
+import NavBar from "../NavBar"
 
-export const OurStory = () => {  
+const OurStory = () => {  
   return(
     <div>
+      <NavBar></NavBar>
       <div style={{color:'black'}} className="our-story">
         <h2>Our Story</h2>
       </div>
@@ -87,3 +89,5 @@ export const OurStory = () => {
     </div>
   )
 }
+
+export default OurStory;

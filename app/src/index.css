@@ -16,6 +16,19 @@
     opacity: 2;
 }
 
+.HeroSection2{
+    background-image: url("../../src/assets/home-1.jpg");
+    height: 17cm;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    align-items: center;
+    display: flex;
+    padding-left: 10rem;
+    overflow-x: hidden;
+    opacity: 2;
+}
+
 .Herosection_text_title #text1{
     color: black;
     font-family: "Poppins", Sans-serif;
@@ -406,4 +419,9 @@ button {
     padding: 20px 50px 20px 50px;
     border: 0;
     margin-right: 20px;
+}
+
+community-section {
+    display: flex;
+    flex-direction: row;
 }

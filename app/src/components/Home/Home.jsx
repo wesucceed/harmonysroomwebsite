@@ -1,34 +1,33 @@
 /* eslint-disable react/no-unescaped-entities */
-// import { Navbar } from "../NavBar/NavBar";
 
-import home_1 from "../../assets/home-1.jpg"
 import nbc from "../../assets/NBC.png"
 import fowler from "../../assets/FowlerBusinessCompetition.jpeg"
 import laub from "../../assets/LAUrbanLeague.png"
 import shec from "../../assets/SheCatalyst.jpeg"
+import NavBar from "../NavBar"
+import HeroSection2 from "./HeroSection2"
+import ValueCard from "../About/ValueCard"
+import CommunitySection from "./CommunitySection"
+import image1 from "../../assets/multiethnic-group-young-happy-students-standing-outdoors.jpg"
+import AppSection from "./AppSection"
 
-export const Home = () => {
+
+
+const Home = () => {
+  // s2 = "Mental Health"
+  // s1 = "Community"
+  // s3 = "Racial Empowerment"
   return (
     <div>
-      <div style={{color:'black'}} className="title">
-        <h2> Home </h2>
-      </div>
+      <NavBar></NavBar>
 
       {/* Insert Navbar here later */}
-      <div style={{color:'black'}} className="header">
-        <img style={{ width: 550, height: 400 }} src={home_1}/>
-        <h3> Harmony's Room </h3>
-        <h4> Your Safe Space </h4>
-        <button>Download app</button>
-        <button>About this app</button>
-      </div>
+      <HeroSection2></HeroSection2> 
 
-      <div style={{color:'black'}} className="our-community">
-        <h2>Our Community</h2>
-        <h4>Community</h4>
-        <h4>Mental Health</h4>
-        <h4>Racial Empowerment</h4>
-      </div>
+      {/* <CommunitySection></CommunitySection> */}
+
+      <h2>Our Community✨</h2>
+      <CommunitySection></CommunitySection>
 
       <div className="partners" >
         <img style={{ width: 120, height: 120 }} src={nbc}/>
@@ -42,12 +41,13 @@ export const Home = () => {
         <p>We focus on uplifting teens and managing emotional health through a social cycle of positivity. Join our community to access resources that strengthen your mindset and support others in their journey with daily encouragement! You’ll also be able to get support from our partnered mental health advisers and programs.</p>
       </div>
 
-      <div style={{color:'black'}} className="beta-services">
-        <h4>Beta platform - services</h4>
-        <h2>Care & Inclusion 💙</h2>
-        <h5>Our community of teens, aged 12-19 focuses on emotional empowerment and inclusion</h5>
-      </div>
+      <ValueCard image = {image1} title = {"Beta Platform Services"} summary = {"Care & Inclusion 💙"} description = {"Our community of teens, aged 12-19 focuses on emotional empowerment and inclusion"} value={"value1"}></ValueCard>
+      <h2>What We Provide🙌🏾</h2>
+      <h2>Our App is coming soon</h2>
+      <AppSection></AppSection>
       
     </div>
   );
 };
+
+export default Home;

@@ -8,10 +8,12 @@ import Richlove from "../../assets/Richlove.jpg"
 import WenLi from "../../assets/WenLi.jpg"
 import Miracle from "../../assets/Miracle.jpg"
 import Jeph from "../../assets/Jephthah.jpg"
+import NavBar from "../NavBar";
 
-export const Team = () => {  
+const Team = () => {  
   return(
     <div style={{width: '100%', height:'100vh'}} className="total">
+      <NavBar></NavBar>
       <div className="header">
           Team
       </div>
@@ -81,3 +83,5 @@ export const Team = () => {
     
   )
 }
+
+export default Team;

@@ -5,11 +5,11 @@ import icon1 from "../../assets/icon-mh.png"
 import icon2 from "../../assets/icon-dc.png"
 import icon3 from "../../assets/icon-free.png"
 import NavBar from "../NavBar"
-
+import Slider from "../../components/Slider/Slider";
 
 
 const colors = ["#0088FE", "#00C49F", "#FFBB28"];
-const texts = ["QUOTE 1", "QUOTE 2", "QUOTE 3"]
+const quotes = ["QUOTE 1", "QUOTE 2", "QUOTE 3"]
 const delay = 10000;
 
 
@@ -110,11 +110,12 @@ const OurStory = () => {
         <div className="title-3">Here is some of our speakers and partners!</div>
       </div>
 
-      <div className="slideshow">
+      {/* <div className="slideshow">
         <div className="slideshowSlider" style={{ transform: `translate3d(${-index * 100}%, 0, 0)` }}>
-          {texts.map((text, index) => (
+          {quotes.map((text, index) => (
             <div className="slide" key={index}> 
-            <div className="slide-text"> {text} </div> 
+              <div className="slide-text"> {text} </div> 
+              <q>{text}</q>
             </div>
           ))}
         </div>
@@ -129,7 +130,9 @@ const OurStory = () => {
           ></div>
         ))}
       </div>
-      </div>
+      </div> */}
+
+      <Slider></Slider>
       
 
       <div className="insight">

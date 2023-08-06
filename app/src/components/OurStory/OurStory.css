@@ -153,10 +153,6 @@
   border: 2px solid transparent;
 }
 
-.sub {
-  pointer-events: none;
-}
-
 @media screen and (max-width: 500px) {
   .sub {
     padding-left: 7%;

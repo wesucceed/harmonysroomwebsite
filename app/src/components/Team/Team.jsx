@@ -45,13 +45,13 @@ const Team = () => {
           </div>
 
           <div className="group-title">
-            Front-End Developers
+            End Developers
           </div>
           <div className="dev-container">
 
             <div className="sub">
               <img style={{ width: 150, height: 150 }} src={Serena} alt="team"/>
-              <h5>Developer</h5>
+              <h5>Front-End Developer</h5>
               <a href="https://www.linkedin.com/in/serena-yang-8137a4264/"> 
                 <h4>Serena Yang</h4>
               </a>

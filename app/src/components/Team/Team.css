@@ -5,14 +5,64 @@
 
 
 .header {
-  /* margin-left: 25%; */
+  margin-top: 5%;
+  margin-left: 10%;
   color: black;
   text-align: left;
   font-weight: 700;
   font-size: x-large;
 }
 
-.indiv-image h5{
+.image-container {
+  min-width: 100%;
+  height: auto;
+}
+
+.group-title {
+  padding-top: 30px;
+  color: rgb(118, 184, 240);
+  font-weight: 700;
+  font-size: x-large;
+  padding-bottom: 20px;
+}
+
+.eboard-container {
+  padding-top: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.dev-container {
+  flex-wrap: wrap;
+  padding-top: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.sub {
+  padding-inline: 50px;
+
+}
+
+.team-photo h1 {
+  padding: 30px;
+  min-width: 50%;
+  height: auto;
+  background-color: rgb(254, 248, 243);
+}
+
+.image {
+  max-width: 85%;
+  height: auto;
+}
+
+.team-photo h4 {
+  font-size: large;
+}
+
+.indiv-image h5 {
   font-weight: 600;
 }
 

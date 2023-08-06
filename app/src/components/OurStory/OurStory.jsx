@@ -6,7 +6,41 @@ import icon2 from "../../assets/icon-dc.png"
 import icon3 from "../../assets/icon-free.png"
 import NavBar from "../NavBar"
 
+
+
+const colors = ["#0088FE", "#00C49F", "#FFBB28"];
+const texts = ["QUOTE 1", "QUOTE 2", "QUOTE 3"]
+const delay = 10000;
+
+
+
+
 const OurStory = () => {  
+  const [index, setIndex] = React.useState(0); 
+  const timeoutRef = React.useRef(null);
+
+  function resetTimeout() {
+    if (timeoutRef.current) {
+      clearTimeout(timeoutRef.current);
+    }
+  }
+
+  React.useEffect(() => {
+    resetTimeout();
+    timeoutRef.current = setTimeout(
+      () =>
+        setIndex((prevIndex) =>
+          prevIndex === colors.length - 1 ? 0 : prevIndex + 1
+        ),
+      delay
+    );
+
+    return () => {
+      resetTimeout();
+    };
+  }, [index]);
+
+
   return(
     <div>
       <NavBar></NavBar>
@@ -14,8 +48,9 @@ const OurStory = () => {
         <h2>Our Story</h2>
       </div>
       <div className="story-container">
-        <div className="image">
-          <img style={{ width: 500, height: 650 }} src={ourstory} alt="team"/>    
+        <div className="img-container">
+          {/* style={{ resizeMode: "contain", width: 350,height: 500}} */}
+          <img src={ourstory} alt="team" className="image"/>    
         </div>
         <div style={{color:'black'}} className="story-text">
           <div className="story-title">Who we are</div>
@@ -42,9 +77,11 @@ const OurStory = () => {
 
         <div className="services">
           <div className="mental-health">
-            <img src={icon1} style={{ width: 60, height: 60 }}/>
-            <h3>Mental Health Education</h3>
-            Pre-register for our community sessions & self-care sisterhood events!
+            <div className="border">
+              <img className="sub" src={icon1} style={{ width: 60, height: 60 }}/>
+              <h3 className="sub">Mental Health Education</h3>
+              <p className="sub">Pre-register for our community sessions & self-care sisterhood events!</p>
+            </div>
           </div>
           <div className="digital">
             <img src={icon2} style={{ width: 60, height: 60 }}/>
@@ -73,8 +110,25 @@ const OurStory = () => {
         <div className="title-3">Here is some of our speakers and partners!</div>
       </div>
 
-      <div className="slide">
-        <p>slide place holder</p>
+      <div className="slideshow">
+        <div className="slideshowSlider" style={{ transform: `translate3d(${-index * 100}%, 0, 0)` }}>
+          {texts.map((text, index) => (
+            <div className="slide" key={index}> 
+            <div className="slide-text"> {text} </div> 
+            </div>
+          ))}
+        </div>
+        <div className="slideshowDots">
+        {colors.map((_, idx) => (
+          <div
+            key={idx}
+            className={`slideshowDot${index === idx ? " active" : ""}`}
+            onClick={() => {
+              setIndex(idx);
+            }}
+          ></div>
+        ))}
+      </div>
       </div>
       
 
